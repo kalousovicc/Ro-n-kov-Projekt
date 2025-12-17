@@ -64,7 +64,7 @@
 <section>
     <h2>Citace a zdroje</h2>
     <ul>
-
+    Při návrhu struktury projektu a formulaci textu byla využita konzultace s jazykovým modelem ChatGPT
     </ul>
 </section>
 
