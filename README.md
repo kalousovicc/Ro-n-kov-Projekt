@@ -109,5 +109,5 @@
     <p>
         Autor projektu: Eliška Kalousová<br>
         Škola: SPŠ Elektrotechniky a informačních technologií, Dobruška<br>
-        Školní rok: 2024/2025 <br>
+        Školní rok: 2025/2026 <br>
         Třída: T3A <br>
