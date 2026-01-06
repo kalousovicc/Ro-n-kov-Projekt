@@ -101,7 +101,7 @@
 <section>
     <h2>Citace a zdroje</h2>
     <ul>
-    Při návrhu struktury projektu a formulaci textu byla využita konzultace s jazykovým modelem ChatGPT
+    WILLIAMS, Barrett a CHATGPT. Raspberry Pi Security: Build Your Own DIY Home Security System with Pi. Barrett Williams, 2025.
     </ul>
 </section>
 
