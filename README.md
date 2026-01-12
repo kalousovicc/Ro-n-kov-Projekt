@@ -30,8 +30,16 @@
         <li>Infračervená LED dioda, 5mm, 940nm čirá: https://rpishop.cz/580649/infracervena-led-dioda-5mm-940nm-cira/</li>
         <li>Metalizovaný rezistor 100 Ω - 0,25 W: https://rpishop.cz/606293/metalizovany-rezistor-100r-0-25-w/</li>
         <li>Modul světelného senzoru - 3 pin: https://rpishop.cz/svetlo/2862-modul-svetelneho-senzoru-3-pin.html/</li>
+
+       
     </ul>
  
+</section>
+<section> 
+<h2> Popis Funkce kamery a infračervených ledek</h2>
+
+<p> Led diody svítí infračerveným světlem, které lidské oko nevidí, ale senzor ho vidí moc dobře, když ho kamera zachití obraz vypadá jako černobíle noční vidění.NA co si dávat pozor? NA to že berou velká proud a nesmí se napájet přímo z Raspberry Pico, protože vy mohli shořet, proto k tomu budu muset použít transiztor </p>
+
 </section>
 
 <section>
