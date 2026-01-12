@@ -23,7 +23,7 @@
     <p>
         Raspberry Pi Pico bude propojeno s kamerovým modulem a světelným senzorem.
         Program bude průběžně vyhodnocovat intenzitu okolního světla (pomocí světelného senzoru).
-        Až po té době kdy se setmí, tak světelný senroz pošle signál a noční vidění se zapne.
+        Až po té době kdy se setmí, tak světelný senroz pošle signál a noční vidění se zapne. Musím navíc přidat infračervené ledky, protože žádna kamera s nočním viděním není kompabitilní s Rassberry Picem.
     </p>
     <ul>
       <h2>Zatím zvolené součástky</h2>
@@ -71,7 +71,7 @@
             #Hodnota kolem které se přepne den/noc
 
 
-            while true: #program běží neustále (nekonečná smyčka), dokud to nevypneme pico
+            while true: #program běží neustále (nekonečná smyčka), dokud nevypneme pico
                 light_value = ldr.read_u16()
                 ir_led.value(1)
                 print("Hodnota světla:", light_value) # vypíše aktuální hodnotu do konzole
