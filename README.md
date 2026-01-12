@@ -45,7 +45,7 @@
 <section>
     <h2>Současný stav projektu</h2>
     <p>
-        V současné době je projekt ve fázi návrhu. 
+        V současné době je projekt ve fázi návrhu. kod je setaven, a už mám plány na to jak to bude vypadat.
     </p>
     <ul>
         <li>seznámení se s mikrokontrolérem Raspberry Pi Pico,</li>
