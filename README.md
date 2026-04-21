@@ -60,43 +60,42 @@
 </section>
 <section>
     <h2>Sestavení programu:</h2>
-    <p> 
-            from machine import ADC, Pin
-            import time
-
-
-
-            #-----Nastavení pinů-----
-            idr = ADC(28)   #pico měří napětí a převádího na čísla, proto čím menší číslo, tím méně tepla
-            ir_led = pin(15, pin.OUT) #nastaví pin, ze kterého bude číst hodnoty světla
-            #Adc-  umožňuje číst analogovou hodnotu ze senzoru světla
-            #Pin- ovládání pinů
-
-            #----- NAstavení prahu-----
-            #Čím nižší světlo -> nižší hodnota. Upravit
-            #podle skutečnosti:
-            THERESHOLD = 25000 #hranice mezi dnem a nocí
-            #Hodnota kolem které se přepne den/noc
-
-
-            while true: #program běží neustále (nekonečná smyčka), dokud nevypneme pico
-                light_value = ldr.read_u16()
-                ir_led.value(1)
-                print("Hodnota světla:", light_value) # vypíše aktuální hodnotu do konzole
-    
-            if light_value < THRESYHOLD: #když je tma hoddnota je malá
-                 ir_led.value(1)
-                 print("NOC: IR LED zapnuto") #vypíše že je noc
-    
-            else:
-                 ir_led.value(0)
-                print("DEN: IR LED vypnuto") #vypíše že je den
-    
-            time.sleep(0.5) #program se na 0,5 sekundy zastaví, aby šetřil výkon a zabránil rychlému přepínání.
-
-    
 </section>
 
+```py
+from machine import ADC, Pin
+import time
+
+
+
+#-----Nastavení pinů-----
+idr = ADC(28)   #pico měří napětí a převádího na čísla, proto čím menší číslo, tím méně tepla
+ir_led = pin(15, pin.OUT) #nastaví pin, ze kterého bude číst hodnoty světla
+#Adc-  umožňuje číst analogovou hodnotu ze senzoru světla
+#Pin- ovládání pinů
+
+#----- NAstavení prahu-----
+#Čím nižší světlo -> nižší hodnota. Upravit
+#podle skutečnosti:
+THERESHOLD = 25000 #hranice mezi dnem a nocí
+#Hodnota kolem které se přepne den/noc
+
+
+while true: #program běží neustále (nekonečná smyčka), dokud nevypneme pico
+    light_value = ldr.read_u16()
+    ir_led.value(1)
+    print("Hodnota světla:", light_value) # vypíše aktuální hodnotu do konzole
+
+if light_value < THRESYHOLD: #když je tma hoddnota je malá
+     ir_led.value(1)
+     print("NOC: IR LED zapnuto") #vypíše že je noc
+
+else:
+     ir_led.value(0)
+    print("DEN: IR LED vypnuto") #vypíše že je den
+
+time.sleep(0.5) #program se na 0,5 sekundy zastaví, aby šetřil výkon a zabránil rychlému přepínání.
+```
 
 <section>
     <h2>Pomocník</h2>
