@@ -89,7 +89,7 @@ else:
 time.sleep(0.5) #program se na 0,5 sekundy zastaví, aby šetřil výkon a zabránil rychlému přepínání.
 ```
 <section>
-    Dokumentace o postupu
+    <h2>Dokumentace o postupu</h2>
     Projekt jsem mela vymyšlení v hlavě, mikrokontrolér bude detekovat zda je den či noc a jakmile zjistí že je noc tak na kameře zapne noční vidění, ale když jsem koukala na kamery s nočním viděním tak buď nebyly kompatibilní a nebo byly drahé, takže jsem vymyslela že použiju infračervené diody sice to nebude tak učínné, ake zase to bude více zajímavé v ohledu studija. Jak to vlastne bude fun govat? Je to jednoduché infračervedné diody místo viditelného světla vyzařují infračervené záření, což lidké oko nevidí, ale kamrey ano, protože jsou velmi citlivé na infračervené vlny, infračervené diody svítí infra světlem, které my nevidíme, ale kamera an, proto jsou vhodné na použítí nočního vidění pro kamery.
     
 </section>
